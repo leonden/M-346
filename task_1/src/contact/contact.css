@@ -1,0 +1,135 @@
+body {
+  background-image: url(../global/img/background/contact-mobile-bg.jpg);
+  background-size: cover;
+  color: white;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(../global/img/background/contact-desktop-bg.jpg);
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(transparent, black 95%);
+  /* backdrop-filter: blur(10px); */
+}
+
+/* CONTACT CONTAINER */
+
+.contact-container {
+  height: calc(100vh - 18vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container {
+  padding: 0 2em;
+}
+
+/* CONTACT CONTAINER */
+
+/* CONTACT TILE */
+
+.contact-tile {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  animation-name: tile-fade-in;
+  animation-duration: 0.75s;
+  animation-iteration-count: initial;
+  animation-fill-mode: forwards;
+  transform: translateX(-110%);
+}
+
+#github {
+  animation-delay: 0.25s;
+}
+
+#linkedin {
+  animation-delay: 0.5s;
+}
+
+#instagram {
+  animation-delay: 0.75s;
+}
+
+@keyframes tile-fade-in {
+  100% {
+    transform: translateX(0);
+    transition: ease-out;
+  }
+}
+
+.contact-tile img {
+  filter: invert(1);
+  width: 4em;
+  transition: 0.25s;
+}
+
+.tile-text {
+  overflow: hidden;
+}
+
+.contact-tile p {
+  font-size: 1.25em;
+  margin-left: 1em;
+}
+
+.contact-tile a {
+  color: white;
+}
+
+/* CONTACT TILE */
+
+/* CONTENT CONTAINER */
+
+.content-container h1 {
+  text-align: center;
+  animation-name: title-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+.content-container span {
+  font-style: italic;
+}
+
+@keyframes title-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* CONTENT CONTAINER */
+
+@media (min-width: 786px) {
+  .contact-container {
+    align-items: center;
+  }
+
+  .content-container {
+    overflow: hidden;
+  }
+
+  .content-container h1 {
+    font-size: 3em;
+    margin: 0 0 1em 0;
+  }
+
+  .contact-tile img {
+    width: 5em;
+  }
+
+  .tile-text {
+    font-size: 1.5em;
+  }
+}

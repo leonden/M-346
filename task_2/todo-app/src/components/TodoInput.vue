@@ -2,7 +2,7 @@
   <div class="input-container">
     <form action="">
       <input type="text" class="create-tile" placeholder="Add To-Do" />
-      <button type="submit" class="add-tile"></button>
+      <button type="submit" class="add-tile" value="Create"></button>
     </form>
   </div>
 </template>
@@ -19,11 +19,10 @@ export default {
 .input-container {
   width: 100%;
   height: fit-content;
-  @include flex-row;
 }
 
 .create-tile {
-  width: 75%;
+  width: 100%;
   height: 2.5em;
   border-radius: 10px;
   border: 2px solid gray;
@@ -35,6 +34,6 @@ export default {
 }
 
 .add-tile {
-  width: 20%;
+  width: 30%;
 }
 </style>

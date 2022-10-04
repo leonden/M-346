@@ -25,12 +25,11 @@ export default {
   padding: 0 20%;
   width: 100%;
   height: fit-content;
-  @include flex-center;
 }
 
 @media (min-width: 786px) {
   .pagewrapper {
-    padding: 0 10%;
+    padding: 0 30%;
   }
 }
 </style>

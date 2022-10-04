@@ -1,0 +1,119 @@
+html {
+  color: white;
+}
+
+/* BACKGROUND */
+
+body {
+  background-image: url(../global/img/background/home-mobile-bg.jpg);
+  background-size: cover;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(../global/img/background/home-desktop-bg.jpg);
+  }
+}
+
+/* BACKGROUND */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(black, transparent 60%, black);
+}
+
+#home h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#home h1 span {
+  font-style: italic;
+}
+
+#home h2 span {
+  font-style: italic;
+}
+
+#home h2 {
+  font-family: "alternate-gothic-atf", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0.3em 0;
+}
+
+.home-container {
+  height: calc(100vh - 18vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container {
+  padding: 2em;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  animation-name: home-fade-in;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+
+@keyframes home-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-container a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.25em;
+  transition: 0.25s;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 786px) {
+  .home-container {
+    align-items: center;
+  }
+
+  #home h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  #home h2 {
+    letter-spacing: 3px;
+    font-size: 3em;
+    font-weight: 500;
+  }
+
+  .content-container {
+    padding: 4em 5vw;
+    background: linear-gradient(black, transparent 70%);
+    backdrop-filter: blur(5px);
+    max-width: fit-content;
+    height: unset;
+  }
+
+  .content-container a:hover {
+    transition: 0.25s;
+    letter-spacing: 2px;
+  }
+}
+
+/* MEDIA QUERIES */

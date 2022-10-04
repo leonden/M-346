@@ -1,0 +1,28 @@
+* {
+  text-decoration: none;
+  cursor: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-weight: 400;
+}
+
+.page {
+  width: 100%;
+  height: calc(100vh - 8vh);
+}
+
+footer {
+  font-weight: 300;
+  width: 100%;
+  height: 10vh;
+  /* background: linear-gradient(to left, transparent, black, transparent);
+  backdrop-filter: blur(10px); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

@@ -1,0 +1,43 @@
+/* CURSOR START */
+
+.cursor-outer {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background: #f1f1f1;
+  pointer-events: none;
+  will-change: transform;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: 100ms ease-out;
+}
+
+.cursor-inner {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  will-change: transform;
+  mix-blend-mode: difference;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition-property: width, height;
+  transition-duration: 0.5s;
+}
+
+.cursor-active {
+  width: 40px;
+  height: 40px;
+  transition-property: width, height;
+  transition-duration: 0.3s;
+}
+
+/* CURSOR END */

@@ -1,0 +1,145 @@
+body {
+  background-image: url(../global/img/background/about-mobile-bg.jpg);
+  background-size: cover;
+  color: white;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(../global/img/background/about-desktop-bg.jpg);
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(transparent, black 110%);
+  /* backdrop-filter: blur(10px); */
+}
+
+.about-container {
+  height: calc(100vh - 18vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-container {
+  padding: 0 1em;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.content-box {
+  border-bottom: 2px solid white;
+}
+
+.label {
+  font-size: 2em;
+  transition: 0.5s;
+  animation-name: label-fade-in;
+  animation-duration: 0.75s;
+  animation-iteration-count: initial;
+  transform: translateX(-100%);
+  animation-fill-mode: forwards;
+}
+
+.label span {
+  font-style: italic;
+}
+
+#label-education {
+  animation-delay: 0.3s;
+}
+
+#label-technical-skills {
+  animation-delay: 0.6s;
+}
+
+@keyframes label-fade-in {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.accordion .content-box {
+  position: relative;
+  margin: 3em 1em;
+}
+
+.accordion .content-box .label {
+  position: relative;
+  padding: 10px;
+}
+
+.accordion .content-box .content {
+  position: relative;
+  height: 0;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.content-box.active .content {
+  height: 20vh;
+  padding: 0 1em 1em 1em;
+}
+
+.content-box.active .label {
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+.content {
+  font-size: 0.95em;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 786px) {
+  .about-container {
+    align-items: center;
+  }
+
+  .content-container {
+    width: 80%;
+  }
+
+  .accordion {
+    overflow: hidden;
+  }
+
+  .label {
+    font-size: 3em;
+  }
+
+  .content {
+    font-size: 1.25em;
+  }
+
+  .content-box.active .label {
+    font-size: 2em;
+  }
+
+  .content-box.active .content {
+    height: 20vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-box.active .content {
+    height: 20vh;
+  }
+
+  .content-container {
+    width: 60%;
+  }
+
+  .content {
+    font-size: 1.5em;
+  }
+}
+
+/* MEDIA QUERIES */

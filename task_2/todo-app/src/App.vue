@@ -1,7 +1,4 @@
 <template>
-  <header>
-    <TodoTitle />
-  </header>
   <main>
     <PageWrapper>
       <TodoTitle />
