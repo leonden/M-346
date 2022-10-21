@@ -42,11 +42,11 @@ In Microsoft Azure habe ich initial eine neue Ressourcengruppe basierend auf dem
 
 ### Anwendung programmieren
 
-JavaScript
+Die Programmierung der Applikation war eigentlich nicht sonderlich schwierig. Insbesondere nach Lesen der Dokumentation von Microsoft konnte ich auch beispielsweise das handhaben der URL Parameter gut verstehen und entsprechend verlief auch die Implementation einfach ab. Dabei habe ich mich dazu entschieden meine Funktion in JavaScript zu schreiben, da ich bereits Erfahrung sammeln konnte und auch grosse Interessen in der Webentwicklung habe.
 
 ### Übersicht
 
-Nach dem die Ordnerstruktur übernommen wurde und die ganzen Dateien in die Cloud gebracht wurden, kann zu guter Letzt ein Blick auf den _$web_ Ordner geworfen werden, in welchem sich die Quelle der Seite befindet. Nun kann ich die einzigartige URL verwenden, welche ich bei der Initialisierung des Speicherkontos definiert habe, um meine [Seite](https://paaswebpagem346.z1.web.core.windows.net/) im Internet aufrufen zu können.
+Nach Abschliessen der Funktions-App innerhalb von Azure lässt sich diese im Online-Editor speichern und unter einer von Azure generierten [URL](https://pffm346.azurewebsites.net/api/primefactorjs?code=ERDWSW9i_1Fr14ceZxZ5v_HWJNpPTksa-l-AePwwoRjoAzFuLQZgcA==&number=) öffnen. Nun, um die Funktion der App nutzen zu können, kann man ganz am Schluss der URL einen zufälligen Integer nach _&number=_ eingeben. Nach dem erneuten Laden der Seite wird das Resultat zu oberst auf der Seite abgebildet.
 
 ---
 
