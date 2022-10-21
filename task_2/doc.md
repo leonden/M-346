@@ -24,13 +24,13 @@ Zum Anfang musste ich mir Gedanken zum Auftrag und dem weiteren Vorgang machen.
 
 Da wir bereits eine Azure Funktion im Unterricht erstellt hatten, waren mir einige Schritte schon bekannt. Andererseits konnte ich mich an das meiste nicht mehr erinnern. Entsprechend habe ich einen Teil der dazugehörigen Dokumentation von [Azure](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-node) gelesen um ein volles Verständnis der Thematik zu erlangen.
 
-Nachdem ich mich mit einem Teil des Unterrichtstoffes nochmals auf der Modulwebsite befasst habe, habe ich die Suche nach diversen Inhalten im Internet gesucht. Durch das erneute Befassen mit den im Unterricht behandelten Themata konnte ich mein Verständnis verbessern und mir im Endeffekt eine noch bessere Vorstellung über diese erste Aufgabe machen.
+Zum Schluss musste ich mir noch Gedanken über die mathematischen Hintergründe der Funktion machen um die Primfaktorzerlegung adäquat implementieren kann. Dabei muss eine Zahl als Parameter in der URL mitgegeben und anschliessend vom Programm ausgelesen werden um zerlegt zu werden.
 
 ---
 
 ## Ziel
 
-Nulla occaecat et incididunt laborum sint cupidatat est. Do officia veniam in nisi magna consequat eiusmod culpa nulla aliqua ad occaecat. Ullamco in laboris mollit nulla proident nostrud et voluptate exercitation nostrud consectetur Lorem enim. Dolor Lorem irure fugiat aliqua.
+Mein Ziel war also im Endeffekt, das Programm der Primfaktorzerlegung in die Azure Funktion zu implementieren.
 
 ---
 
