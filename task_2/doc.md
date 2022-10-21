@@ -46,7 +46,7 @@ JavaScript
 
 ### Übersicht
 
-Nulla occaecat et incididunt laborum sint cupidatat est. Do officia veniam in nisi magna consequat eiusmod culpa nulla aliqua ad occaecat. Ullamco in laboris mollit nulla proident nostrud et voluptate exercitation nostrud consectetur Lorem enim. Dolor Lorem irure fugiat aliqua.
+Nach dem die Ordnerstruktur übernommen wurde und die ganzen Dateien in die Cloud gebracht wurden, kann zu guter Letzt ein Blick auf den _$web_ Ordner geworfen werden, in welchem sich die Quelle der Seite befindet. Nun kann ich die einzigartige URL verwenden, welche ich bei der Initialisierung des Speicherkontos definiert habe, um meine [Seite](https://paaswebpagem346.z1.web.core.windows.net/) im Internet aufrufen zu können.
 
 ---
 
@@ -89,6 +89,22 @@ function primeFactorization(n) {
 
 ## Bilder
 
-<img src="assets/image" alt="alternative-text" width="400"/>
+<img src="assets/create-function.png" alt="create-function" width="400"/>
 
-[Title](#link)
+[Funktions-App erstellen](#link)
+
+<img src="assets/go-to-develop.png" alt="page-number-entered" width="400"/>
+
+[Zum Programmieren navigieren](#link)
+
+<img src="assets/azure-function.png" alt="azure-function" width="400"/>
+
+[Azure Funktion](#link)
+
+<img src="assets/page-default.png" alt="page-default" width="400"/>
+
+[Seitenansicht standard](#link)
+
+<img src="assets/page-number-entered.png" alt="page-number-entered" width="400"/>
+
+[Seitenansicht Zahl](#link)
