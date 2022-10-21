@@ -38,11 +38,11 @@ Mein Ziel war also im Endeffekt, das Programm der Primfaktorzerlegung in die Azu
 
 ### Ressourcengruppe
 
-Nulla occaecat et incididunt laborum sint cupidatat est. Do officia veniam in nisi magna consequat eiusmod culpa nulla aliqua ad occaecat. Ullamco in laboris mollit nulla proident nostrud et voluptate exercitation nostrud consectetur Lorem enim. Dolor Lorem irure fugiat aliqua.
+In Microsoft Azure habe ich initial eine neue Ressourcengruppe basierend auf dem Modulnamen erstellt um alle der kommenden Aufgaben zentral in einer Gruppe auffinden zu können.
 
-### Speicherkonto und Website anlegen
+### Anwendung programmieren
 
-Nulla occaecat et incididunt laborum sint cupidatat est. Do officia veniam in nisi magna consequat eiusmod culpa nulla aliqua ad occaecat. Ullamco in laboris mollit nulla proident nostrud et voluptate exercitation nostrud consectetur Lorem enim. Dolor Lorem irure fugiat aliqua.
+JavaScript
 
 ### Übersicht
 
@@ -52,7 +52,7 @@ Nulla occaecat et incididunt laborum sint cupidatat est. Do officia veniam in ni
 
 ## Quellcode
 
-```
+```js
 module.exports = async function (context, req) {
   context.log("JavaScript HTTP trigger function processed a request.");
 
@@ -62,7 +62,7 @@ module.exports = async function (context, req) {
       number +
       ": " +
       primeFactorization(number).join(", ")
-    : "This HTTP triggered function executed successfully. Pass a number in the query string or in the request body for a personalized response.";
+    : "Please insert a number at the end of the URL which you want to check for the prime factorialization. -> '...&number=<number>'";
 
   context.res = {
     body: responseMessage,
